@@ -1,0 +1,13 @@
+.home
+{
+
+}
+.homeimg{width: 100%;
+height:200px;}
+.products{
+    display: flex;
+    width: 86%;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
