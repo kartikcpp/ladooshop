@@ -1,21 +1,27 @@
 import React from 'react'
 
-import img from '../images/image1.jfif'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-function Checkoutproduct({name,price,id}) {
+import { useDispatch } from 'react-redux';
+function Checkoutproduct({name,price,id,imgg}) {
+      const dispatch=useDispatch();
+    function removeitem(){
+      console.log("remove")
+          dispatch({type:'remove',payload:id})
+    }
+
     return (
-        <div>
+        <div style={{margin:'20px'}}>
             
-            <Card sx={{ maxWidth: 400 }}>
+            <Card sx={{ maxWidth: 250 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image={img}
+          image={imgg}
           alt="ladoo"
         />
         <CardContent>
@@ -28,7 +34,7 @@ function Checkoutproduct({name,price,id}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button onClick={removeitem} size="small" color="primary">
           Remove from Cart
         </Button>
       </CardActions>

@@ -1,0 +1,14 @@
+.checkoutcontainer{
+    display: flex;
+    flex-direction: row;
+}
+.checkoutleft{
+    flex:8;
+    display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.checkoutright{
+flex:2;
+
+}

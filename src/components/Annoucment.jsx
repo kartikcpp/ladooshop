@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 function Annoucment() {
     return (
         <div>

@@ -15,3 +15,7 @@
 }
 
 .login{   margin: 22px;}
+.loginregister{
+    display: flex;
+    align-items: center;
+}

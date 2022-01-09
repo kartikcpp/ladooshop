@@ -7,11 +7,12 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import './Product.css'
 import { useDispatch } from 'react-redux';
-function Product({name,price,id}) {
+function Product({name,price,img}) {
     const dispatch=useDispatch();
     function addtocart(target){
         console.log(target)
-        const addprod={pname:name,price:price}
+        console.log('here',name)
+        const addprod={pName:name,price:price,img:img}
         dispatch({type:'add',payload:addprod})
     }
     return (

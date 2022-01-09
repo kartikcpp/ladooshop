@@ -2,8 +2,9 @@
 {
 
 }
-.homeimg{width: 100%;
-height:200px;}
+.homecontainer{width: 100%;
+height:200px;
+background-color: blanchedalmond;}
 .products{
     display: flex;
     width: 86%;
